@@ -1,14 +1,4 @@
-<head>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [['$','$']]
-            }
-        });
-    </script>
-</head>
+
 # MLandDL
 
 ## 逻辑回归
@@ -18,7 +8,7 @@ $f(\boldsymbol{x})=w_{1} x_{1}+w_{2} x_{2}+\ldots+w_{d} x_{d}+b$
 $f(\boldsymbol{x})=\boldsymbol{w}^{\mathrm{T}} \boldsymbol{x}+b$,  
 其中$\boldsymbol{w}=\left(w_{1} ; w_{2} ; \ldots ; w_{d}\right)$ 和 $b$ 为模型参数。   
 线性模型的目标就是学习到合适的 $w$ 和 $b$ 去作回归预测，如房价预测，西瓜好坏。
-如何学习到$w$ 和 $b$? 
+如何学习到$w$ 和 $b$ ？
 1. 首先定义损失函数，计算当前预测值与实际输出值之间的差异，包括均方误差，交叉熵等。   
 2. 选择优化算法，目前所有优化算法都是基于梯度下降，通过调整学习率跟梯度方向提出了包括随机梯度下降，mini-batch 梯度下降、Momentum 动量算法、AdaGrad 算法、RMSProp 算法、Adam 算法。
 若选择均方误差作为线性回归的损失函数，最优问题：
