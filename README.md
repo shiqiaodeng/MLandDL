@@ -11,7 +11,7 @@ $f(\boldsymbol{x})=\boldsymbol{w}^{\mathrm{T}} \boldsymbol{x}+b$,
 如何学习到$w$ 和 $b$ ？
 1. 首先定义损失函数，计算当前预测值与实际输出值之间的差异，包括均方误差，交叉熵等。   
 2. 选择优化算法，目前所有优化算法都是基于梯度下降，通过调整学习率跟梯度方向提出了包括随机梯度下降，mini-batch 梯度下降、Momentum 动量算法、AdaGrad 算法、RMSProp 算法、Adam 算法。
-若选择均方误差作为线性回归的损失函数，最优问题：
+若选择均方误差作为线性回归的损失函数，最优问题：    
 $\begin{aligned}\left(w^{*}, b^{*}\right) &=\underset{(w, b)}{\arg \min } \sum_{i=1}^{m}\left(f\left(x_{i}\right)-y_{i}\right)^{2} \\ &=\underset{(w, b)}{\arg \min } \sum_{i=1}^{m}\left(y_{i}-w x_{i}-b\right)^{2} \end{aligned}$
 
 线性回归虽然简单但是却难以预测非线性模型，而非线性模型在现实世界中的任务有比较常见，因此有人引入对数来预测非线性模型，其定义如下：
