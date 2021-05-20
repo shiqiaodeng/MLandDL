@@ -2,5 +2,4 @@
 
 int main(){
     cout << "hello" << endl;
-    sds
-}
+    return 0;
