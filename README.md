@@ -1,3 +1,12 @@
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
 
 # MLandDL
 
@@ -13,6 +22,10 @@ $f(\boldsymbol{x})=\boldsymbol{w}^{\mathrm{T}} \boldsymbol{x}+b$,
 2. 选择优化算法，目前所有优化算法都是基于梯度下降，通过调整学习率跟梯度方向提出了包括随机梯度下降，mini-batch 梯度下降、Momentum 动量算法、AdaGrad 算法、RMSProp 算法、Adam 算法。
 若选择均方误差作为线性回归的损失函数，最优问题：    
 $\begin{aligned}\left(w^{*}, b^{*}\right) &=\underset{(w, b)}{\arg \min } \sum_{i=1}^{m}\left(f\left(x_{i}\right)-y_{i}\right)^{2} \\ &=\underset{(w, b)}{\arg \min } \sum_{i=1}^{m}\left(y_{i}-w x_{i}-b\right)^{2} \end{aligned}$
+
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large $\begin{aligned}\left(w^{*}, b^{*}\right) &=\underset{(w, b)}{\arg \min } \sum_{i=1}^{m}\left(f\left(x_{i}\right)-y_{i}\right)^{2} \\ &=\underset{(w, b)}{\arg \min } \sum_{i=1}^{m}\left(y_{i}-w x_{i}-b\right)^{2} \end{aligned}$" style="border:none;">
+
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;">
 
 线性回归虽然简单但是却难以预测非线性模型，而非线性模型在现实世界中的任务有比较常见，因此有人引入对数来预测非线性模型，其定义如下：
 $\ln y=\boldsymbol{w}^{\mathrm{T}} \boldsymbol{x}+b$.
